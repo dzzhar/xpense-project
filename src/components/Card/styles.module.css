@@ -1,0 +1,58 @@
+.card {
+  background-color: #ef4444;
+  color: white;
+  width: 100%;
+  height: 170px;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  align-content: space-evenly;
+}
+
+.card__title {
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  font-size: large;
+}
+
+.card__amount {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.card__expense {
+  background-color: #ef4444;
+}
+
+.card__income {
+  background-color: #0068a3;
+}
+
+.card__balance {
+  background-color: grey;
+}
+
+@media (min-width: 456px) {
+  .card {
+    width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-basis: 31%;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .card__amount {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+}

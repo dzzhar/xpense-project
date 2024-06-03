@@ -1,0 +1,13 @@
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    max-width: 1020px;
+    width: 80%;
+    margin: auto;
+    gap: 2.5%;
+  }
+}
+
+.container__flex {
+  flex-basis: 50%;
+}

@@ -1,0 +1,28 @@
+.container {
+  margin: 4rem 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin-inline: 0;
+  }
+
+  .wrapper {
+    max-width: 1020px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .card {
+    flex-basis: 30%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
