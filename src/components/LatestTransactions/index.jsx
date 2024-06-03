@@ -5,13 +5,15 @@ const Latest = () => {
   const { transactions } = useGetTransactions();
   // console.log(transactions);
 
+  const latestTransactions = [...transactions].reverse();
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <section>
           <h1 className={styles.latest__header}>Transactions</h1>
           <div className={styles.detail}>
-            {transactions.map((transaction, index) => {
+            {latestTransactions.map((transaction, index) => {
               const { description, transactionAmount, transactionType } =
                 transaction;
 
